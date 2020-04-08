@@ -1,0 +1,14 @@
+node('10.2.3.86') {  
+    try {
+        stage('Preparation') { 
+            // git branch: 'master', url: 'https://github.com/zhuc001/Testcomplete-test.git'
+            println "Preparation"
+        }
+        stage('Test') { 
+            testcompletetest executorType: 'TC', executorVersion: '14.0', launchType: 'lcKdt', project: 'Schdule', suite: 'C:\\Users\\dac-zhuc\\Documents\\TestComplete 14 Projects\\ProjectSuite2\\DEMO\\ISE.pjs', test: 'U5', useTCService: true, userName: 'dac_zhuc', userPassword: '1'
+            println "Test" 
+        }
+    } catch (err) {
+        echo 'Something failed, I should sound the klaxons!'
+    }
+}

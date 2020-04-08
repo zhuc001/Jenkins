@@ -1,7 +1,7 @@
 node('10.2.3.86') {  
     try {
         stage('Preparation') { 
-            // git branch: 'master', url: 'https://github.com/zhuc001/Testcomplete-test.git'
+            // git branch: 'master', url: 'https://github.com/zhuc001/Jenkins.git'
             println "Preparation"
         }
         stage('Test') { 

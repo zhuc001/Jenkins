@@ -1,4 +1,4 @@
-node('ise-je-test1') {  
+node('ise-tc-test') {  
     try {
         stage('Preparation') { 
             println "Preparation"

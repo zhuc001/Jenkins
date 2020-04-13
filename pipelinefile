@@ -1,4 +1,4 @@
-node('10.2.3.86') {  
+node('ise-je-test1') {  
     try {
         stage('Preparation') { 
             println "Preparation"
